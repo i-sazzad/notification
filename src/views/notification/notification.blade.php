@@ -10,27 +10,38 @@
     }
 </style>
 
+<div class="dropdown dropdown-notifications pt-1">
+    <a href="javascript:" id="notification-center" data-value="0"
+       class="header-icon fa fa-bell p-0 notification-center"
+       data-toggle="dropdown">
+        <span class="badge badge-light text-danger notif-count" style="position: fixed;top: 8px;"></span>
+        <span class="bubble" style="display:none" id="notification-buble"></span>
+    </a>
 
-<div class="dropdown-menu notification-toggle" role="menu"
-     aria-labelledby="notification-center">
-    <!-- START Notification -->
-    <div class="notification-panel">
-        <!-- START Notification Body-->
-        <div class="notification-body  scrollable">
-            <div class="notification-container" style="cursor: pointer !important;">
+    <!-- START Notification Dropdown -->
+    <div class="dropdown-menu notification-toggle" role="menu"
+         aria-labelledby="notification-center">
+        <!-- START Notification -->
+        <div class="notification-panel">
+            <!-- START Notification Body-->
+            <div class="notification-body  scrollable">
+                <div class="notification-container" style="cursor: pointer !important;">
 
+                </div>
             </div>
+            <!-- END Notification Body-->
+            <!-- START Notification Footer-->
+            <div class="notification-footer d-flex" id="readAll">
+                <a href="{{url('/show-all-notification')}}" style="color:#0063c5 !important;">Show all</a>
+                <a href="#" class="readAll ml-auto">Read all</a>
+            </div>
+            <!-- START Notification Footer-->
         </div>
-        <!-- END Notification Body-->
-        <!-- START Notification Footer-->
-        <div class="notification-footer d-flex" id="readAll">
-            <a href="{{url('/show-all-notification')}}" style="color:#0063c5 !important;">Show all</a>
-            <a href="#" class="readAll ml-auto">Read all</a>
-        </div>
-        <!-- START Notification Footer-->
+        <!-- END Notification -->
     </div>
-    <!-- END Notification -->
+
 </div>
+
 @push('scripts')
     <script src="https://js.pusher.com/7.0/pusher.min.js"></script>
 
