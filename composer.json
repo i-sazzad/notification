@@ -1,0 +1,30 @@
+{
+    "name": "imran/notification",
+	"description": "You can create the to-do-list of your task.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Imranul Sazzad",
+            "email": "imranulsazzad@gmail.com"
+        }
+    ],
+	"minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1.26",
+        "guzzlehttp/guzzle": "^7.2",
+        "pusher/pusher-php-server": "^7.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Imran\\Notification\\NotificationServiceProvider",
+                "imran\\Notification\\NotificationEventServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Imran\\Notificaiton\\": "src/"
+        }
+    }
+}
