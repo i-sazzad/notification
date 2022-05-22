@@ -1,4 +1,4 @@
-1. *composer require ranger/notification*
+1. Run *composer require ranger/notification*
 
 2. In *config/app.php* under *providers* add:<br />
 *\Ranger\Notification\NotificationServiceProvider::class*
