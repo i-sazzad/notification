@@ -1,8 +1,8 @@
 <?php
 
-namespace Imran\Notification\Services;
+namespace Ranger\Notification\Services;
 
-use Imran\Notification\Events\NotificationEvent;
+use Ranger\Notification\Events\NotificationEvent;
 use GuzzleHttp\Exception\GuzzleException;
 use Illuminate\Support\Facades\Log;
 use Pusher\ApiErrorException;

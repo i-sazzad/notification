@@ -1,10 +1,10 @@
 <?php
 
-namespace Imran\Notification;
+namespace Ranger\Notification;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
-use Imran\Notification\Events\NotificationEvent;
-use Imran\Notification\Listeners\NotificationListener;
+use Ranger\Notification\Events\NotificationEvent;
+use Ranger\Notification\Listeners\NotificationListener;
 
 class NotificationEventServiceProvider extends ServiceProvider
 {

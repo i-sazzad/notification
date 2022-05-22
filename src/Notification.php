@@ -1,6 +1,6 @@
 <?php
 
-namespace Imran\Notification;
+namespace Ranger\Notification;
 
 use Illuminate\Database\Eloquent\Model;
 

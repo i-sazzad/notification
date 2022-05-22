@@ -1,9 +1,9 @@
 <?php
 
-namespace Imran\Notification\Listeners;
+namespace Ranger\Notification\Listeners;
 
-use Imran\Notification\Events\NotificationEvent;
-use Imran\Notification\Notification;
+use Ranger\Notification\Events\NotificationEvent;
+use Ranger\Notification\Notification;
 use Illuminate\Support\Facades\Log;
 
 class NotificationListener

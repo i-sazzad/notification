@@ -1,6 +1,6 @@
 <?php
 
-namespace Imran\Notification\Events;
+namespace Ranger\Notification\Events;
 
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Queue\ShouldQueue;

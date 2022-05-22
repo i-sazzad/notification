@@ -6,8 +6,8 @@ use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Imran\Notification\Notification;
-use Imran\Notification\NotificationController;
+use Ranger\Notification\Notification;
+use Ranger\Notification\NotificationController;
 
 
 class NotifyController extends NotificationController

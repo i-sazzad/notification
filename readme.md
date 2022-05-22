@@ -1,14 +1,8 @@
-1. In composer.json: 
-"psr-4": {
-            "App\\": "app/",
-            "Imran\\Notification\\": "vendor/imran/notification/src/"
-        },
-		
-2. in config/app under providers: \Imran\Notification\NotificationServiceProvider::class
+1. in config/app under providers: \Ranger\Notification\NotificationServiceProvider::class
 
-3. keep notification folder in resources/views
+2. keep notification folder in resources/views
 
-4. add routes:
+3. add routes:
 Route::get('ajax/get-notifications', 'NotifyController@getAllNotifications');
 Route::post('ajax/read-notifications', 'NotifyController@readNotifications');
 Route::post('ajax/read-all-notifications', 'NotifyController@readAllNotifications');

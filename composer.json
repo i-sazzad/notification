@@ -1,11 +1,11 @@
 {
-    "name": "imran/notification",
+    "name": "ranger/notification",
 	"description": "You can create the to-do-list of your task.",
     "type": "library",
     "authors": [
         {
-            "name": "Imranul Sazzad",
-            "email": "imranulsazzad@gmail.com"
+            "name": "Rangerul Sazzad",
+            "email": "rangerulsazzad@gmail.com"
         }
     ],
 	"minimum-stability": "dev",
@@ -17,14 +17,14 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Imran\\Notification\\NotificationServiceProvider",
-                "imran\\Notification\\NotificationEventServiceProvider"
+                "Ranger\\Notification\\NotificationServiceProvider",
+                "ranger\\Notification\\NotificationEventServiceProvider"
             ]
         }
     },
     "autoload": {
         "psr-4": {
-            "Imran\\Notificaiton\\": "src/"
+            "Ranger\\Notificaiton\\": "src/"
         }
     }
 }

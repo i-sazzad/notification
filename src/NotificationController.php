@@ -1,9 +1,9 @@
 <?php
 
-namespace Imran\Notification;
+namespace Ranger\Notification;
 
 use App\Http\Controllers\Controller;
-use Imran\Notification\Services\NotificationService;
+use Ranger\Notification\Services\NotificationService;
 use Illuminate\Http\Request;
 
 

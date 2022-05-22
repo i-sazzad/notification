@@ -1,6 +1,6 @@
 <?php
 
-namespace Imran\Notification\Services;
+namespace Ranger\Notification\Services;
 
 
 use Illuminate\Support\Carbon;

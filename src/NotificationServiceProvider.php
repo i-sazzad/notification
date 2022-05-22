@@ -1,6 +1,6 @@
 <?php
 
-namespace Imran\Notification;
+namespace Ranger\Notification;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\ServiceProvider;
@@ -31,6 +31,6 @@ class NotificationServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->register(NotificationEventServiceProvider::class);
-//        $this->app->make('imran\notification\NotificationController');
+//        $this->app->make('ranger\notification\NotificationController');
     }
 }
