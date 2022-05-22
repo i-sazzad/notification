@@ -1,9 +1,15 @@
-1. In *config/app.php* under *providers* add:<br />
+1. *composer require ranger/notification*
+
+2. In *config/app.php* under *providers* add:<br />
 *\Ranger\Notification\NotificationServiceProvider::class*
 
-2. Keep "*src/views/notification*" folder in "*resources/views*"
+3. Go to *vendor/ranger/notification* folder
 
-3. Add routes:<br />
+4. Keep "*src/views/notification*" folder in "*resources/views*"
+
+5. Add *@include('notification.notification')* in the file where the bell will be shown
+
+5. Add routes:<br />
 *Route::get('ajax/get-notifications', 'NotifyController@getAllNotifications');*<br />
 *Route::post('ajax/read-notifications', 'NotifyController@readNotifications');*<br />
 *Route::post('ajax/read-all-notifications', 'NotifyController@readAllNotifications');*<br />
